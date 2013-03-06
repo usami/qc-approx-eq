@@ -4,8 +4,7 @@ function [ans] = approxeq(epsilon, u11, u12, u21, u22)
 %
 
 U = [u11 u12; u21 u22];
-diff = U - U^3;
-e_upper = sqrt(norm(diff * [1; 0])^2 + norm(diff * [0; 1])^2);
+e_upper = norm(eye(2) - U^2);
 
 if (e_upper < epsilon)
     ans = 'YES';
