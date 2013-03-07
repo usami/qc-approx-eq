@@ -1,13 +1,9 @@
 # approxeq
-
-## Overview
----
 approxeq is a Matlab function that computes whether two quantum circuits are
 approximately equivalent or not.
 
 
 ## Usage
----
 This function has the following syntax:
 
 	approxeq(epsilon, u11, u12, u21, u22)
@@ -23,7 +19,6 @@ directory, and then call the function like this.
 
 
 ## Example
----
 Here are some test runs for U = X, Y, Z, H, S or T. In each test, epsilon is
 set to 0.0001.
 
@@ -81,6 +76,3 @@ set to 0.0001.
 | ------- | --- | --- | --- | --- | --- | --- |
 | 0.0001  | YES | YES | YES | YES | NO  | NO  |
 | 0.00001 | YES | YES | YES | NO  | NO  | NO  |
-
-If we input H as [0.7071, 0.7071; 0.7071, -0.7071] and epsilon 0.00001,
-two circuits are not approximately equivalent.
